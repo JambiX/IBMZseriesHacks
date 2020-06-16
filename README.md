@@ -1,7 +1,7 @@
 # IBMZseriesHacks
 
 
-I responsibly disclosed these issues to IBM on hackerOne, they ignored me, told me they are not going to fix it, and basically told me to f#ck off.. So I'm posting them here
+I responsibly disclosed these issues to IBM on hackerOne, but unfortunately their answer indicated they are not going to fix them. 
 
 ### SQL Injection on Tivoli Asset Discovery for z/Systems version 8.1.0:
 I discovered that the many pages of IBM Tivoli Asset Discovery are vulnerable to SQL injection.
